@@ -1,0 +1,5 @@
+/* styles for HTML5 maps */
+.map-img {
+	border: 1px solid lightgray;
+	max-width: 95%;
+}

@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Artifact - Interactive Activity</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="../../styles/1704.css" rel="stylesheet" type="text/css">
+  <script language="JavaScript">
+    <!-- hide from old browsers
+   function openFocus() {
+       window.focus();
+   }
+    //-->
+      <!--DON -- do we need a javascript:window.print function here? -->
+  </script>
+
+  <script src="js/d3.min.js"></script>
+
+  </head>
+
+<body background="../../images/sandtile.gif" link="#660000" vlink="#993300" alink="#FF6600" leftmargin="20">
+<jsp:useBean id="dbp" scope="session" class="edu.mass.memorialhall.sof.jsp.Artifacts" />
+
+<P><A HREF="javascript:history.back()"><SPAN CLASS="small_menu">return to Artifact Page</SPAN></A></P>
+<P>
+
+  <!-- JavaScript D3 replacement for Flash -->
+  <div id="lens-container">
+    <!-- Required, name to match first parameter below -- will be filled by lens-d3.js -->
+  </div>
+
+  <script src="js/lens.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    showLens("lens-container", 
+      "images/Partridge_letter.jpg", 
+      "images/Partridge_letter_txt.jpg",
+      722, 1102, "startX=20");
+  </script>
+
+
+  <span class="small_menu"><a href="#top">top</a> | <a href="#"onClick="window.close()">close window</a> | <a href="javascript:window.print()">print</a></span>
+</P>
+</body>
+</html>

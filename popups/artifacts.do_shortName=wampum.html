@@ -1,0 +1,90 @@
+
+
+
+
+<html lang="en">  
+<HEAD>
+<TITLE>Artifact - Wampum Belt</TITLE>
+<!--<base href="https://1704.deerfield.history.museum/artifacts/artifact.jsp">-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../styles/1704.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../common/popWindow.js"></script>
+<script language="JavaScript" src="../common/openseadragon.min.js"></script>
+</head>
+
+<body background="../images/sandtile.gif" link="#660000" vlink="#993300" 
+    alink="#CC3300" leftmargin="20" onload="openFocus()">
+	<!-- String imgParm: getTitle() -->
+<SCRIPT LANGUAGE="JavaScript">
+	if (isOpenedByNon1704) {
+		document.write('<P CLASS="body_text"><A href="/artifacts/index.jsp">Go to Artifacts Menu</A>&nbsp;&nbsp;' +
+					   '<A href="/home_page.jsp">Go to 1704 Home Page</A></P>');
+	}
+
+</SCRIPT>
+<table border="0" cellspacing="0" cellpadding="2">
+  <tr valign="top"> 
+    <td>
+      <p>
+        <BR>  
+        <!-- DWH: wampum -->
+      </p>
+      <div class="dragon-container">
+        <div id="openseadragon1"></div> 
+        <script type="text/javascript">
+          var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            // clickToZoom: false,
+            // pinchToZoom: false,
+            minZoomImageRatio: 0.8,
+            maxZoomLevel: 2,
+            prefixUrl: "../common/images/",
+            tileSources: 'https://img.americancenturies.org/iiif/3/sof|wampum.jp2/info.json',
+            crossOriginPolicy: "anonymous",
+            drawer: "canvas"
+          });
+        </script>
+      </div>    
+      <BR>
+      <span class="small_menu">
+        <FONT COLOR="#996633">Copyright Parks Canada, Ottawa, Canada</FONT>
+      </span><BR><BR>
+
+           
+
+      <!-- &lt;bean:write name=&quot;artifactForm&quot; property=&quot;shortTitle&quot;/&gt; -->
+      <p CLASS="body_text">
+        
+
+        
+
+        
+      </p>
+    </td>
+    <td width="20">&nbsp;</td>
+    <td>
+      <p CLASS="segment_title">Wampum Belt</p>
+      <p CLASS="bigbody">This Iroquois wampum belt, made from nine rows of small, tubular, polished shell beads, is said to have been presented during the signing of the 1701 Great Peace Treaty of Montr&eacute;al. White wampum, associated with life, peace and prosperity, was made from the shells of the whelk. Purple or black wampum, symbolizing death, war and tragedy, came from large clam shells. Beads were skillfully made with stone or bone tools and laboriously polished with sandstone. Wampum belts or collars were fashioned by stringing beads onto slippery elm bark, wild hemp or gut. Before European contact, wampum had long been valuable in trade and tribute, and it continued to be important in trade with the Europeans. In the early 17th century, the Dutch began importing porcelain and glass "wampum" beads although they were not as highly prized as shell wampum. Despite its varied uses as adornment, currency, or token of good faith, wampum retained its deep symbolic power.</p>
+      <p CLASS="body_text">
+        Date:        circa 1701&nbsp;<BR>
+        Topic:       Ceremonial&nbsp;<BR>
+        Materials:   Shell beads<BR>
+        Dimensions:  L: 36 in.(91.4 cm.), W: 2 in.(5 cm.)&nbsp;<BR>
+        Accession #: X.72.667.2
+      </p>
+    </td>
+  </tr>
+</table>
+<BR>
+<span class="small_menu">
+  <a href="artifacts.do_shortName=wampum&amp;anchorName=.html#top">top</a> | 
+  <SCRIPT LANGUAGE="JavaScript">
+  if (!isOpenedByNon1704) { // supress this link if page IS opened by outside link
+      document.write('<a href="javascript:window.close()">close window</a> |');
+  }
+  </SCRIPT>
+  <a href="javascript:window.print()">print</a>
+</span>
+</body>
+</html>

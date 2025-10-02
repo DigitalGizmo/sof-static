@@ -1,0 +1,181 @@
+/* styles for HTML5 interactive scenes */
+#scene-app {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#scene-app a:link, #scene-app a:visited {
+	color: #660000;
+}
+
+#scene-app a:hover, #scene-app a:active {
+	color: brown;
+}
+
+.scene-wrapper {
+	max-width: 930px;
+	overflow: auto;
+	background-image: url("../scenes/html5images/bkgrnd_sand.jpg");
+}
+
+.scene-image	{
+	float: left;
+	padding: 1px;
+	width: 70%;
+}
+
+.scene-image img {
+	max-width: 100%;
+}
+
+.scene-text	{
+	float: right;
+	padding: 3px;
+	width: 29%;
+}
+
+@media screen and (max-width: 890px) {
+	.scene-text {
+		padding: 1px;
+	}
+}
+
+.tabs	{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabs li {
+	display: inline;
+}
+
+@media screen and (max-width: 890px) {
+	.tabs li a img {
+		width: 36px;
+	}
+}
+
+img.tab-selected {
+	margin-bottom: -5px;
+}
+
+.no-pointer {
+	cursor: default;
+}
+
+.tab-text {
+	background-color: #F7F6E6;
+	border-right: 1px solid #B79A6B;
+	border-left: 1px solid #B79A6B;
+	border-bottom: 1px solid #B79A6B;
+	height: 436px;
+	overflow-y: scroll;
+	padding: 0.25em;
+}
+
+.tab-text h3	{
+	color: #330000;
+}
+
+.scene-related {
+	clear: left;
+	padding: 3px;
+	width: 68%;
+}
+
+.icons {
+	float: left;
+	margin-right: 2%;
+	width: 15%;
+}
+
+.icons p {
+	color: #660000;
+	font-variant: small-caps;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 1em;
+	text-align: right;
+	padding-top: 1.25em;
+}
+
+.scene-info-area {
+	margin-left: 17%;
+}
+
+/* hotspots */
+.hotspot {
+	fill: #FFF;
+	fill-opacity: 0.0;
+}
+.hotspoton {
+	fill: #CC3333;
+	fill-opacity: 0.35;
+}
+
+/* spotlights/masks */
+.tab-mask {
+	fill: #000;
+	fill-opacity: 0.7;
+}
+
+/* hotspot text */
+.roll-text {
+	border: 1px solid #B79A6B;
+	color: #660000;
+	height: 60px;
+	margin-bottom: 3px;
+	padding: 0.25em;
+}
+
+/* popup menus */
+ul.related-menu {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+ul.related-menu li {
+	background-color: beige;
+	border: 1px solid #B79A6B;
+	display: inline-block;
+	margin-top: 0;
+	/*padding: 0.25em 2em 0.25em 0.5em;*/
+	padding: 0.5% 3% 0.5% 1%;
+	position: relative;
+	width: 19.15%;
+}
+
+ul.related-menu li a {
+	color: brown;
+}
+
+/* popup sub-menus */
+ul.related-menu li ul {
+	position: absolute;
+	bottom: 1.85em;
+	left: -4.13em;
+}
+
+ul.related-menu li ul li {
+	display: inline-block;
+	width: 160px;
+}
+
+/* for View Larger Illustration */
+.large-illus {
+	padding: 2em;
+	background-color: #660000;
+}
+
+.large-illus p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #CC9933;
+}
+
+.large-illus img {
+	max-width: 95%;
+}

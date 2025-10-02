@@ -1,0 +1,245 @@
+.title {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.scene_title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 26px;
+	font-weight: bold;
+}
+.body_text {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal; line-height: 14px
+}
+.small_menu {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal; line-height: 13px
+}
+.questions {
+  font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 13px
+}
+.bigbody, p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 16px;
+	color : #330000;
+}
+.menu { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: 16px ; font-weight: bold}
+.smtitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 20px;
+	font-weight: bold;
+}
+/*used at top of people page*/
+.people_title {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: bold;
+	line-height: 24px;
+	color : #330000;
+}
+/*used at start of section (attack, march, etc.)*/
+.segment_title {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #330000;
+	font-style: normal;
+	line-height: 18px;
+	font-weight : bold;
+}
+/*used within sections*/
+.subHead {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #330000;
+	font-weight : bold;
+	line-height: 16px;
+}
+.timelinetext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: normal;
+	color: #CC9933;
+}
+.timelinetitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #CC9933;
+	font-style: bold;
+}
+.pgMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 13px;
+	color: #CC9900;
+	font-weight: bold;
+}
+.bigbodyRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 16px;
+	color : #CC9933;
+}
+/*used to make the navigation tables for the Character Narratives*/
+.CNbar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height: 15px;
+	color: #FFFFCC;
+	background-color: #990000;
+	clear: left;
+	float: none;
+	text-align: center;
+}
+/*used only for the links in the navigation tables for the Character Narratives*/
+a.CNlink:link, a.CNlink:visited {color:FFFFCC}.surveyblock {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #330000;
+	background-color: #E4DFA9;
+	clear: left;
+	float: none;
+	height: auto;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.imgspace {
+	margin-right: 12px;
+}
+/*styling for the navigation at the top of each page*/
+.topnav1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #CC9933;
+	padding: 3px 0px 3px 0px;
+	text-decoration: none;
+}
+
+.topnav2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #CCCC66;
+	background-color: #851C06;
+	padding: 3px 0px 3px 0px;
+	text-decoration: none;
+}
+
+.topnav3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #CCCC66;
+	background-color: #9F3500;
+	padding: 3px 0px 3px 0px;
+	text-decoration: none;
+}
+
+.selected1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #FFFF99;
+	background-color: #851C06;
+	padding: 3px 0px 3px 0px;
+	text-decoration: none;
+}
+
+.selected2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #FFFF99;
+	background-color: #9F3500;
+	padding: 3px 0px 3px 0px !important; /*moz padding height*/ 
+	padding: 1px 0px 1px 0px; /*IE padding height*/ 
+	text-decoration: none;
+}
+
+.selected_nolink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #FFFF99;
+	padding: 3px 0px 3px 0px;
+	text-decoration: none;
+}
+
+a.topnav1:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #CC9933;
+	text-decoration: none;
+}
+
+a.topnav1:hover {
+	color: #FFFF99;
+}
+
+a.topnav2:link {
+	text-decoration: none;
+}
+
+a.topnav2:hover {
+	color: #FFFF99;
+}
+a.topnav3:link {
+	text-decoration: none;
+}
+
+a.topnav3:hover {
+	color: #FFFF99;
+}
+/*end of styling for the navigation at the top of each page*/
+.homelink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #996600;
+	text-decoration: none;
+}
+a.homelink:hover {color: #FFFF99;}
+td.splash_notice	{background:#881200; padding:1em; margin-bottom: 1em; }
+div.padleft {padding-left: 30px;}
+
+/* don adding */
+
+.dragon-container {
+    width: 450px;        /* Set explicit width */
+    height: 400px;       /* Set explicit height */
+    border: 1px solid #ccc; /* Optional: border to see the container */
+    position: relative;  /* Contain the OpenSeadragon viewer */
+    margin: 10px 0;      /* Some spacing */
+}
+
+#openseadragon1 {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;  /* Changed from absolute */
+    background-color: #EEE; 
+}

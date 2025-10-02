@@ -1,0 +1,15 @@
+# extensions
+*.jpg
+*.log
+*.mp3
+
+# files
+.DS_Store
+
+# directories
+images/
+webstat/
+homeimages/
+mp3/
+
+# allow

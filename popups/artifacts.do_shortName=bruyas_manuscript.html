@@ -1,0 +1,91 @@
+
+
+
+
+<html lang="en">  
+<HEAD>
+<TITLE>Artifact - Liturgical Manuscript in Kanienkeha</TITLE>
+<!--<base href="https://1704.deerfield.history.museum/artifacts/artifact.jsp">-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../styles/1704.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../common/popWindow.js"></script>
+<script language="JavaScript" src="../common/openseadragon.min.js"></script>
+</head>
+
+<body background="../images/sandtile.gif" link="#660000" vlink="#993300" 
+    alink="#CC3300" leftmargin="20" onload="openFocus()">
+	<!-- String imgParm: getTitle() -->
+<SCRIPT LANGUAGE="JavaScript">
+	if (isOpenedByNon1704) {
+		document.write('<P CLASS="body_text"><A href="/artifacts/index.jsp">Go to Artifacts Menu</A>&nbsp;&nbsp;' +
+					   '<A href="/home_page.jsp">Go to 1704 Home Page</A></P>');
+	}
+
+</SCRIPT>
+<table border="0" cellspacing="0" cellpadding="2">
+  <tr valign="top"> 
+    <td>
+      <p>
+        <BR>  
+        <!-- DWH: bruyas_manuscript -->
+      </p>
+      <div class="dragon-container">
+        <div id="openseadragon1"></div> 
+        <script type="text/javascript">
+          var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            // clickToZoom: false,
+            // pinchToZoom: false,
+            minZoomImageRatio: 0.8,
+            maxZoomLevel: 2,
+            prefixUrl: "../common/images/",
+            tileSources: 'https://img.americancenturies.org/iiif/3/sof|bruyas_manuscript.jp2/info.json',
+            crossOriginPolicy: "anonymous",
+            drawer: "canvas"
+          });
+        </script>
+      </div>    
+      <BR>
+      <span class="small_menu">
+        <FONT COLOR="#996633">Courtesy Special Collections, Lauinger Library, Georgetown University, Washington, D.C.</FONT>
+      </span><BR><BR>
+
+           
+
+      <!-- &lt;bean:write name=&quot;artifactForm&quot; property=&quot;shortTitle&quot;/&gt; -->
+      <p CLASS="body_text">
+        
+
+        
+
+        
+      </p>
+    </td>
+    <td width="20">&nbsp;</td>
+    <td>
+      <p CLASS="segment_title">Liturgical Manuscript in Kanienkeha</p>
+      <p CLASS="bigbody">This manuscript is generally attributed to Father Jacques Bruyas, a French Jesuit missionary to the Kanienkehaka and a contemporary of Jacques Marquette. Written in Kanienkeha or the Mohawk language, the manuscript was probably used to teach Native converts in missionary settlements along the St. Lawrence River. Shown here is the only color illustration in the manuscript. It is similar in style to European illuminated manuscripts. 
+</p>
+      <p CLASS="body_text">
+        Date:        circa 1700&nbsp;<BR>
+        Topic:       Historic&nbsp;<BR>
+        Materials:   Paper, ink<BR>
+        Dimensions:  H: 7.75 in. (19.6 cm.), W: 5.75 in. (14.6 cm.)&nbsp;<BR>
+        Accession #: John Gilmary Shea Papers: Box 10 Folder 1
+      </p>
+    </td>
+  </tr>
+</table>
+<BR>
+<span class="small_menu">
+  <a href="artifacts.do_shortName=bruyas_manuscript&amp;anchorName=.html#top">top</a> | 
+  <SCRIPT LANGUAGE="JavaScript">
+  if (!isOpenedByNon1704) { // supress this link if page IS opened by outside link
+      document.write('<a href="javascript:window.close()">close window</a> |');
+  }
+  </SCRIPT>
+  <a href="javascript:window.print()">print</a>
+</span>
+</body>
+</html>
