@@ -141,3 +141,8 @@ function changePage(event, shortName, pageName) {
   
   return false;
 }
+
+// generic open window - was onlin in map index.do.html
+function openHelp(url) {
+    window.open(url,"maps","scrollbars=yes,resizable=yes,menubar=yes,width=824,height=513");
+}

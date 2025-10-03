@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="../styles/1704.css" rel="stylesheet" type="text/css">
 <link href="../styles/1704_html5_scenes.css" rel="stylesheet" type="text/css">
-
+<script language="JavaScript" src="../common/popWindow.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es5%2Ces6"></script>
@@ -346,8 +339,9 @@
      
       <BR CLEAR="left">
       </P>
-      <P CLASS="bigbody"><a 
-        href="javascript:openSimpleWindow('help','help.html','help')" ><IMG 
+      <P CLASS="bigbody">
+        <a href="help.html" ONCLICK="openHelp('help.html'); return false">
+        <IMG 
         SRC="../images/icon_help.gif" 
         ALT="help icon" WIDTH="33" 
         HEIGHT="32" BORDER="0" ALIGN="ABSMIDDLE">How to Use This Page</A>
