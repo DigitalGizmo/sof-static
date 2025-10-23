@@ -35,7 +35,7 @@ function openLink(linkType, shortName, anchorName) {
     } else if (linkType == "artifacts") {
         width = 800; height = 600;
     }
-    var linkUrl = "/popups/" + linkType + ".do_shortName=" + shortName + ".html";
+    var linkUrl = "/popups/" + linkType + "/" + shortName + ".html";
     // TEMPORARILY DISABLED FOR SCRAPING - re-enable after capture
     if (anchorName && anchorName.length > 0) {
         linkUrl += "#" + anchorName;

@@ -1,0 +1,90 @@
+
+
+
+
+<html lang="en">  
+<HEAD>
+<TITLE>Artifact - Sheldon Chest</TITLE>
+<!--<base href="https://1704.deerfield.history.museum/artifacts/artifact.jsp">-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../styles/1704.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../common/popWindow.js"></script>
+<script language="JavaScript" src="../common/openseadragon.min.js"></script>
+</head>
+
+<body background="../images/sandtile.gif" link="#660000" vlink="#993300" 
+    alink="#CC3300" leftmargin="20" onload="openFocus()">
+	<!-- String imgParm: getTitle() -->
+<SCRIPT LANGUAGE="JavaScript">
+	if (isOpenedByNon1704) {
+		document.write('<P CLASS="body_text"><A href="/artifacts/index.jsp">Go to Artifacts Menu</A>&nbsp;&nbsp;' +
+					   '<A href="/home_page.jsp">Go to 1704 Home Page</A></P>');
+	}
+
+</SCRIPT>
+<table border="0" cellspacing="0" cellpadding="2">
+  <tr valign="top"> 
+    <td>
+      <p>
+        <BR>  
+        <!-- DWH: shel_chest -->
+      </p>
+      <div class="dragon-container">
+        <div id="openseadragon1"></div> 
+        <script type="text/javascript">
+          var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            // clickToZoom: false,
+            // pinchToZoom: false,
+            minZoomImageRatio: 0.8,
+            maxZoomLevel: 2,
+            prefixUrl: "../common/images/",
+            tileSources: 'https://img.americancenturies.org/iiif/3/sof|shel_chest.jp2/info.json',
+            crossOriginPolicy: "anonymous",
+            drawer: "canvas"
+          });
+        </script>
+      </div>    
+      <BR>
+      <span class="small_menu">
+        <FONT COLOR="#996633">Courtesy of the Society for the Preservation of New England Antiquities</FONT>
+      </span><BR><BR>
+
+           
+
+      <!-- &lt;bean:write name=&quot;artifactForm&quot; property=&quot;shortTitle&quot;/&gt; -->
+      <p CLASS="body_text">
+        
+
+        
+
+        
+      </p>
+    </td>
+    <td width="20">&nbsp;</td>
+    <td>
+      <p CLASS="segment_title">Sheldon Chest</p>
+      <p CLASS="bigbody">Marked with the date "1699" and the initials of its owner, John Sheldon (1658-1733) of Deerfield, Massachusetts, this six-board chest could be described as a silent witness to the Deerfield raid of 1704. Unlike the door on the Sheldon home, the chest suffered no damage during the 1704 attack. Sheldon was just completing the building of his ambitious two-story house in 1699. He may well have hired the town's most skilled craftsman, John Hawks, to fabricate the interior woodwork of his home and to make this chest. Six-board chests were commonly used in 17th and 18th-century New England homes for storing household textiles. This example retains its original red paint.   </p>
+      <p CLASS="body_text">
+        Date:        1699&nbsp;<BR>
+        Topic:       Household&nbsp;<BR>
+        Materials:   Painted wood<BR>
+        Dimensions:  H: 23.25 in., W: 51.25 in., D: 18 in. &nbsp;<BR>
+        Accession #: 1991.1474
+      </p>
+    </td>
+  </tr>
+</table>
+<BR>
+<span class="small_menu">
+  <a href="artifacts/shel_chest&amp;anchorName=.html#top">top</a> | 
+  <SCRIPT LANGUAGE="JavaScript">
+  if (!isOpenedByNon1704) { // supress this link if page IS opened by outside link
+      document.write('<a href="javascript:window.close()">close window</a> |');
+  }
+  </SCRIPT>
+  <a href="javascript:window.print()">print</a>
+</span>
+</body>
+</html>
