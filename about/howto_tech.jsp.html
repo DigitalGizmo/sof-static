@@ -1,33 +1,209 @@
-<html><head><title>How To Make a Site Like This</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link rel="stylesheet" href="../styles/1704.css" type="text/css"><script language="JavaScript" src="../common/popWindow.js"></script><script language="JavaScript">setAppRoot("/");</script><style type="text/css"><!--.style1 {color: #990000}-->f</style></head><body bgcolor="#660000" background="../images/bkgrnd_big.gif" text="#330000" link="#660000" vlink="#993300" alink="#FF9900"><TABLE WIDTH="740" BORDER="0" ALIGN="CENTER" CELLPADDING="0" CELLSPACING="0">  <TR>    <TD><A NAME="top"></A>            <!-- begin include "topnav.html" -->
+<html>
+<head>
+<title>How To Make a Site Like This</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/1704.css" type="text/css">
+<script language="JavaScript" src="../common/popWindow.js"></script>
+<script language="JavaScript">
+setAppRoot("/");
+</script>
+<style type="text/css"><!--
+.style1 {color: #990000}
+-->f
+</style>
+</head>
+<body bgcolor="#660000" background="../images/bkgrnd_big.gif" text="#330000" link="#660000" vlink="#993300" alink="#FF9900">
+<TABLE WIDTH="740" BORDER="0" ALIGN="CENTER" CELLPADDING="0" CELLSPACING="0">
+  <TR>
+    <TD><A NAME="top"></A>
+            <!-- begin include "topnav.html" -->
 
-    <A HREF="../home.do.html" 
+    <A HREF="../home.html" 
         class="topnav1">1704 Home</A> &nbsp;
     <!-- <span class="selected_nolink">Story Menu</span> &nbsp; -->
-    <A HREF="../scenes/index.do.html" 
+    <A HREF="../scenes/index.html" 
         class="topnav1">Story Menu</A> &nbsp;
-    <A HREF="../scenes/groups.do.html" 
+    <A HREF="../scenes/groups.html" 
         class="topnav1">Meet the 5 Cultures</A> &nbsp;
-    <A HREF="../people/index.do.html" 
+    <A HREF="../people/index.html" 
         class="topnav1">People</A> &nbsp;
-    <A HREF="../artifacts/index.do.html" 
+    <A HREF="../artifacts/index.html" 
         class="topnav1">Artifacts</A> &nbsp;
-    <A HREF="../maps/index.do.html" 
+    <A HREF="../maps/index.html" 
         class="topnav1">Maps</A> &nbsp;
     <A HREF="../timeline/timeline.do_title=1600_1620.html" 
         class="topnav1">Timeline</A> &nbsp;
-    <A HREF="../voices/index.do.html" 
+    <A HREF="../voices/index.html" 
         class="topnav1">Voices & Songs</A> &nbsp;
-    <A HREF="../background/index.do.html" 
+    <A HREF="../background/index.html" 
         class="topnav1">Explanations</A> &nbsp;
     <!-- <A HREF="/list/glossary/all.do" 
         class="topnav1">Game</A> &nbsp;  -->
 
 <!-- end include "topnav.html" -->
-      <P><IMG SRC="../images/golden_rule.gif" ALT="rule" WIDTH="740" HEIGHT="1"></P>      <TABLE WIDTH="700" BORDER="0" CELLPADDING="20" CELLSPACING="0" BGCOLOR="f4f2da">        <TR>          <TD VALIGN="top">            <P CLASS="body_text"><A HREF="index.jsp.html">About This Site</A> : <a href="started.jsp.html">Getting Started</a> | <a href="visitor.jsp.html">Contact</a> | <a href="goals.jsp.html">About This Project</a> | <a href="howto.jsp.html">How To</a> | <a href="honors.jsp.html">Honors</a> | <a href="credits.jsp.html">Credits</a> | <a href="tech.jsp.html">Tech Info</a><BR>              <BR>            <SPAN CLASS="scene_title">How To Make a Site Like This</SPAN></P>            <P CLASS="body_text"><a href="howto.jsp.html">Overview</a><br>						  <a href="howto_manage.jsp.html"> Managing the 1704 Website Project</a><br>						<a href="howto_design.jsp.html">Design and Production</a><br>						Technology</P>						<P CLASS="scene_title">Technology</P>						<P CLASS="body_text">Page Contents:<br>						<A HREF="#intro">Introduction</A> | <A HREF="#database">Database</A> | <A HREF="#xml">XML</A> | <A HREF="#webapp">Web Application Framework</A></P>            <P><a name="intro"></a></P>						            <P class="segment_title">Introduction</p>            <P CLASS="bigbody">Dialog between the lead technical developer and other team members was important at an early stage in the development of this site—as soon as an outline of the content and the basic design approach had been established. A thorough understanding of the intended design and content helped determine what technologies should be used. And, in turn, the technical practicalities and decisions helped inform the design possibilities, the content structure and the overall structure of the site.            </P>						<P CLASS="bigbody">We knew from the outset that this would be an extensive site—extensive textual and image content and a core of interactive scenes. We also know we would feature a collection of many artifacts. All of these things pointed toward sophisticated technologies for the site including databases and XML. Each of these seem indespensable to a site of this scope, so we will discuss those first. We will also discuss the Flash we used for our interactive scenes. Lastly we will cover the web application framework we used to knit all of the pieces together. 						</P>                        <P><a name="database"></a></P>						<P class="segment_title">Database</p>						<P CLASS="bigbody"><span class="subHead">Design</span><br>						Based on previous projects, such as American Centuries, we took it for granted that information about artifacts in the collection would be stored in a database. Databases are well suited to the storage and presentation of large numbers of entries or pages where the same "fields" of information always appear in the same format in the same order. (This is in contrast to the more flexibly structured essay material which will be discussed later.)						</P>						<P CLASS="bigbody">In addition to the collection, we also stored glossary terms and bibliography entries in database tables. However the collection of artifacts, one of the key features of the site, required the most planning and attention.						</P>						<P CLASS="bigbody">The task of defining fields for the collection required close collaboration between the technologist, the designer and the content folks. We needed to identify what pieces of information would be displayed on the pages, what pieces were needed by the curators and production people independent of display and lastly, what would be required by the web application itself. 						</P>						            <P CLASS="bigbody">We had two points of reference as we defined the               fields: the museum's pre-existing database for their large collection               featured on the American Centuries site and the mandate in our IMLS               grant to adhere to and promote standards aimed at information exchange.               We identified the Dublin Core Metadata Initiative (<A href="http://dublincore.org/" target="external">http://dublincore.org/</A>)               as the prevailing standard for museum collections. As it turned               out, the content of most of the museum's existing fields paralleled               the Dublin Core fields—we adopted the Dublin Core terminology for               both the curatorial and display fields where relevant. (See the               data entry form in the section below for a full list of fields.)             </P>						<P CLASS="bigbody">For indexing within the web application we used auto-generated integers, while the curators referred to ascension numbers for unique identification.						</P>						<P CLASS="bigbody">As far as the database technology itself, the museum was already using Microsoft SQL Server for American Centuries. We wanted to share the same server, so we went ahead and used that technology. We could have worked with any full-featured database—we have successfully used the open source MySQL on a number of projects.						</P>						<P CLASS="bigbody"><span class="subHead">Data Entry</span><br>						Since we were focusing on presenting multiple perspectives we ended up working with a geographically disperse group of scholars and authors. To give them all the ability to directly enter and preview content we developed a team site with a suite of browser-based online content editing tools.						</P>						<P CLASS="bigbody">Each type of content, artifacts, glossary, bibliography and so on, had its own comprehensive list. Besides providing an entry point for content editing, each entry also linked to a preview of the finished page in the site. The list was also used to track production progress.						</p>            <img src="howto_resources/images/artifactList.gif" alt="Artifact list from Tracker." width="531" height="269" border="1"><br>						<P CLASS="bigbody">Selecting the edit link brings up a text entry form for editing all of the fields.  In the artifact form below there is a section for Content and a section for Tracking. The last few fields of content are labeled as Non-Display. Some fields are presented as checkboxes, such as whether or not this artifact receives a "special feature" icon or not.						</p>            <IMG src="howto_resources/images/CalumetEdit.gif" alt="Artifact data entry form." width="430" height="599" border="1"><br>            <span class="small_menu">view <A href="javascript:openSimpleWindow('default','howto_resources/articleEdit.html','example')">complete             form</A></span>             <P CLASS="bigbody">After submitting the changes the editor can use the preview link to bring up the real page in the site reflecting the recent changes. 						</P>            						<P><a name="database"></a></P>						<P class="segment_title">XML</p>						<P CLASS="bigbody"><span class="subHead">Implementation</span><br>						We knew we would have numerous and extensive character biographies and background essays. These pages are distinguished from the database-driven pages described above in that they are more free-form in their content and layout. There are headings, subheadings and images that vary in number and sequence from essay to essay. XML is well suited to handle this sort of document-oriented flexible structure. 						</P>						<P CLASS="bigbody">While it would be possible to write this kind of material directly into HTML we believe this to be unsustainable. The writer would be encumbered by the HTML tags and the designer would be encumbered by all of the text and the frequent versions as the text is rewritten and corrected, and each would be encumbered by the need to coordinate with the other. Overall changes in design, inevitable during development, would become extremely tedious. We wanted to follow the best practice of keeping content separate from display.						</P>						<P CLASS="bigbody">We felt it was well worth the extra overhead to store the content in XML. We created XML schemas for character narratives and background essays that defined sections, headings, subheadings, images, captions and page navigation such as links to glossary terms, maps and other essays. Following is a small excerpt from the beginning of the XML for a character narrative:						</P>			<code>            &lt;person&gt;<BR> &nbsp;&nbsp;&lt;name&gt;Atiwans&lt;/name&gt;<BR>             &nbsp;&nbsp;&lt;group&gt;Sokoki - W&amp;ocirc;banaki&lt;/group&gt;<BR>             &nbsp;&nbsp;&lt;yearBorn circa=&quot;true&quot;&gt;1661&lt;/yearBorn&gt;<BR>             &nbsp;&nbsp;&lt;yearDied circa=&quot;true&quot;&gt;1748&lt;/yearDied&gt;<BR>             &nbsp;&nbsp;&lt;segment shortTitle=&quot;Prologue&quot;&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;segTitle&gt;Prologue&lt;/segTitle&gt;<BR>             &nbsp;&nbsp;&nbsp;&nbsp;&lt;segDates&gt;1661&lt;/segDates&gt;<BR>             &nbsp;&nbsp;&nbsp;&nbsp;&lt;segBody&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;bottomCaptionPic&gt;<BR>             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image fileName=&quot;atiwans.jpg&quot;             width=&quot;200&quot; height=&quot;315&quot;/&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;Throughout             his life, Atiwans remained deeply connected to the <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Connecticut River valley.&lt;/caption&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;copyright&gt;Illustration             copyright Francis Back.&lt;/copyright&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/bottomCaptionPic&gt;<BR>             &nbsp;&nbsp;&nbsp;&nbsp;&lt;segPara&gt;When he was young, &lt;glossary             invariant=&quot;Atiwans&quot;&gt;Atiwans&lt;/glossary&gt; <BR>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enjoyed swimming with the             &lt;glossary invariant=&quot;namasak&quot;&gt;namasak&lt;/glossary&gt;,<BR>             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the fish people, among             the rocks and plants...             </code>             <P CLASS="bigbody"><span class="subHead">Data Entry</span><br>						Most writers are most comfortable writing in a regular word-processor such as Microsoft Word. We took that as a starting point. We had data entry person who could quickly copy and paste the document into XML. Several of our writers were comfortable making subsequent edits directly in the XML. 						</P>						<P CLASS="bigbody">To accomplish this we created templates in Altova's XMLSpy that worked with Altova's stand-alone editor called Authentic. With that editor and the appropriate template in place editing became as WYSIWYG as a word processor. Additionally there were boxes for entering the structured information required for each link that appeared within the text. 						</P>            <img src="howto_resources/images/Authentic.gif" alt="Artifact data entry form." width="606" height="298" border="1"><br>            <P CLASS="bigbody">The XML files were checked in and out of the server using Dreamweaver. That product has a check-in and out feature that prevents two people from changing the same file at the same time. Once a file was posted the changes were immediately reflected in the online preview accessed through the tracking lists, or within the site itself.						</P>												<P CLASS="bigbody"><span class="subHead">Display</span><br>						The raw XML only becomes useful for display when it is transformed, usually to HTML, by XSL (XML Style Language). For instance, the following XML element						</P>            <blockquote>              <code>&lt;sectionHead&gt;Attack on Deerfield&lt;/sectionHead&gt;</code>              </blockquote>            <P CLASS="bigbody">might be transformed to the following HTML:</P>   					<blockquote>  					  <code>&lt;P class="heading"&gt;Attack on Deerfield&lt;/P&gt;</code>					  </blockquote>  					<P CLASS="bigbody">You'll notice that we're also using CSS. The syntax of XSL itself is a bit arcane and is beyond the scope of this document.						</P>						            <P CLASS="bigbody">We used Apache Xalan (<A href="http://xml.apache.org/xalan-j/" target="external">http://xml.apache.org/xalan-j/               </A>) behind the scenes to accomplish these transformations in real-time.               Because this is fairly processor-intensive we implemented a caching               scheme—the transformation happens once, then on subsequent visits               to the page the content is delivered from server memory. </P>						<P CLASS="bigbody"><span class="subHead">Flash</span><br>						Note: This flash discussion is no longer relevant. As of October 2020 we have updated interactive activities to HTML5.						A key goal of the project was to present the story from multiple perspectives. In our "shared scenes" we wanted the switch between perspectives to be as seamless as possible. We felt that reloading the HTML page for each switch would be too distracting. We chose Flash as a way to accomplish the switches while staying on the same page. Flash also offered advantages for rollovers and animation of the spotlight transitions. 						</P>						<P CLASS="bigbody">The shared scenes contain extensive text in addition to the images. In keeping with our policy of separating content from display, we stored text in XML files outside of Flash. This was doubly beneficial since we also wanted to present plain text versions of the shared scenes—a single XML file could be transformed either for use in Flash or to plain HTML.						</P>						<P CLASS="bigbody">We channeled the content from XML to Flash using an approach that involved several steps. We wrote XSL that transformed the XML to a set of Action Script arrays that could be read by Flash:						</P>            <blockquote> <code> tabTexts["Intro"] = '&lt;p&gt;&lt;b&gt;Deerfield               attacked:&lt;/b&gt; On February 29, 1704, the sun rose on a chaotic               scene in the English settlement... in Native homelands?&lt;/p&gt;&lt;br&gt;';               <BR>              tabTexts["Wobanakiak"] = '&lt;p&gt;&lt;b&gt;In the battle: &lt;/b&gt;               W\u00F4banaki fighters split into groups with other Natives and               French... in an attack on New England.&lt;/p&gt;&lt;br&gt;'; </code>             </blockquote>            <p class="bigbody">For each set of changes we would then need to re-compile the Flash. This was the one case where the editors did not see there changes in real-time. However, at the beginning of the authoring process we compiled the changes and additions often so that the authors could get acclimated to seeing their content in this interactive format—a format very different from a Word document. </p>            <P><a name="webapp"></a></P>            <P class="segment_title">Web Application Framework</p>						<P CLASS="bigbody">A number of base technologies could be used to knit together the elements described above.  We wanted a cross-platform solution that would run on our existing Windows server, but one that could be moved, if necessary, to a commercial server that might be running UNIX or Linux. We therefore excluded Microsoft .Net solutions. We also thought that our scope, sophisticated needs and desire for long term maintenance would push the limits of PHP. We had experience with Java servlet technology from the American Centuries site and other projects, so this was a natural choice. Java servlets represent a mature, open-source, cross-platform, industrial-strength technology. It does present a fairly high threshold for entry—a lengthy learning curve for the uninitiated. So an experienced Java programmer is required in the mix. For legacy and other reasons some institutions will make choices different from what we describe here. 						</P>						            <P CLASS="bigbody">On top of the Java servlet technology, and new               to us for this project, we chose to use the Apache Struts web application               framework ( <A href="http://struts.apache.org/" target="external">http://struts.apache.org/</A>               ). A framework such as this takes care of a lot of groundwork allowing               the developer to focus on the unique aspects of a given site. Many               developers are using Struts so many discussion and a lot of help               are available online. </P>						<P CLASS="bigbody">In the discussions of database and XML usage above we have mentioned the benefits of keeping content separate from display. The Struts framework helps additionally by keeping the flow of control separate from both the content and the display. This is known as the Model-View-Control approach. For controlling the flow (navigation) Struts provides a configuration file that associates URLs with content and with the pages that display that content. Because of this configuration file the site can be expanded by adding URLs and page names without touching the code. Of course the content has to be written and any new display has to be created, but it's a big plus not to have to go back into the programming cycle for every change.						</P>						<P CLASS="bigbody">The actual display is accomplished with tags inserted into the JSP—Java Server Pages. There is no programming contained in the pages—a designer is able make changes to these tags as well as to the surrounding plain HTML.            <P class="small_menu"><a href="#top">top of page</a></P>          </TD>        </TR>      </TABLE>      <P><IMG SRC="../images/golden_rule.gif" ALT="rule" WIDTH="740" HEIGHT="1"></p>      <!-- begin include "btmnav.html" -->
+
+      <P><IMG SRC="../images/golden_rule.gif" ALT="rule" WIDTH="740" HEIGHT="1"></P>
+      <TABLE WIDTH="700" BORDER="0" CELLPADDING="20" CELLSPACING="0" BGCOLOR="f4f2da">
+        <TR>
+          <TD VALIGN="top">
+            <P CLASS="body_text"><A HREF="index.jsp.html">About This Site</A> : <a href="started.jsp.html">Getting Started</a> | <a href="visitor.jsp.html">Contact</a> | <a href="goals.jsp.html">About This Project</a> | <a href="howto.jsp.html">How To</a> | <a href="honors.jsp.html">Honors</a> | <a href="credits.jsp.html">Credits</a> | <a href="tech.jsp.html">Tech Info</a><BR>
+              <BR>
+            <SPAN CLASS="scene_title">How To Make a Site Like This</SPAN></P>
+            <P CLASS="body_text"><a href="howto.jsp.html">Overview</a><br>
+						  <a href="howto_manage.jsp.html"> Managing the 1704 Website Project</a><br>
+						<a href="howto_design.jsp.html">Design and Production</a><br>
+						Technology</P>
+						<P CLASS="scene_title">Technology</P>
+						<P CLASS="body_text">Page Contents:<br>
+						<A HREF="#intro">Introduction</A> | <A HREF="#database">Database</A> | <A HREF="#xml">XML</A> | <A HREF="#webapp">Web Application Framework</A></P>
+            <P><a name="intro"></a></P>
+						
+            <P class="segment_title">Introduction</p>
+            <P CLASS="bigbody">Dialog between the lead technical developer and other team members was important at an early stage in the development of this siteas soon as an outline of the content and the basic design approach had been established. A thorough understanding of the intended design and content helped determine what technologies should be used. And, in turn, the technical practicalities and decisions helped inform the design possibilities, the content structure and the overall structure of the site.
+            </P>
+						<P CLASS="bigbody">We knew from the outset that this would be an extensive siteextensive textual and image content and a core of interactive scenes. We also know we would feature a collection of many artifacts. All of these things pointed toward sophisticated technologies for the site including databases and XML. Each of these seem indespensable to a site of this scope, so we will discuss those first. We will also discuss the Flash we used for our interactive scenes. Lastly we will cover the web application framework we used to knit all of the pieces together. 
+						</P>
+            
+            <P><a name="database"></a></P>
+						<P class="segment_title">Database</p>
+						<P CLASS="bigbody"><span class="subHead">Design</span><br>
+						Based on previous projects, such as American Centuries, we took it for granted that information about artifacts in the collection would be stored in a database. Databases are well suited to the storage and presentation of large numbers of entries or pages where the same "fields" of information always appear in the same format in the same order. (This is in contrast to the more flexibly structured essay material which will be discussed later.)
+						</P>
+						<P CLASS="bigbody">In addition to the collection, we also stored glossary terms and bibliography entries in database tables. However the collection of artifacts, one of the key features of the site, required the most planning and attention.
+						</P>
+						<P CLASS="bigbody">The task of defining fields for the collection required close collaboration between the technologist, the designer and the content folks. We needed to identify what pieces of information would be displayed on the pages, what pieces were needed by the curators and production people independent of display and lastly, what would be required by the web application itself. 
+						</P>
+						
+            <P CLASS="bigbody">We had two points of reference as we defined the 
+              fields: the museum's pre-existing database for their large collection 
+              featured on the American Centuries site and the mandate in our IMLS 
+              grant to adhere to and promote standards aimed at information exchange. 
+              We identified the Dublin Core Metadata Initiative (<A href="http://dublincore.org/" target="external">http://dublincore.org/</A>) 
+              as the prevailing standard for museum collections. As it turned 
+              out, the content of most of the museum's existing fields paralleled 
+              the Dublin Core fieldswe adopted the Dublin Core terminology for 
+              both the curatorial and display fields where relevant. (See the 
+              data entry form in the section below for a full list of fields.) 
+            </P>
+						<P CLASS="bigbody">For indexing within the web application we used auto-generated integers, while the curators referred to ascension numbers for unique identification.
+						</P>
+						<P CLASS="bigbody">As far as the database technology itself, the museum was already using Microsoft SQL Server for American Centuries. We wanted to share the same server, so we went ahead and used that technology. We could have worked with any full-featured databasewe have successfully used the open source MySQL on a number of projects.
+						</P>
+
+						<P CLASS="bigbody"><span class="subHead">Data Entry</span><br>
+						Since we were focusing on presenting multiple perspectives we ended up working with a geographically disperse group of scholars and authors. To give them all the ability to directly enter and preview content we developed a team site with a suite of browser-based online content editing tools.
+						</P>
+						<P CLASS="bigbody">Each type of content, artifacts, glossary, bibliography and so on, had its own comprehensive list. Besides providing an entry point for content editing, each entry also linked to a preview of the finished page in the site. The list was also used to track production progress.
+						</p>
+            <img src="howto_resources/images/artifactList.gif" alt="Artifact list from Tracker." width="531" height="269" border="1"><br>
+						<P CLASS="bigbody">Selecting the edit link brings up a text entry form for editing all of the fields.  In the artifact form below there is a section for Content and a section for Tracking. The last few fields of content are labeled as Non-Display. Some fields are presented as checkboxes, such as whether or not this artifact receives a "special feature" icon or not.
+						</p>
+            <IMG src="howto_resources/images/CalumetEdit.gif" alt="Artifact data entry form." width="430" height="599" border="1"><br>
+            <span class="small_menu">view <A href="javascript:openSimpleWindow('default','howto_resources/articleEdit.html','example')">complete 
+            form</A></span> 
+            <P CLASS="bigbody">After submitting the changes the editor can use the preview link to bring up the real page in the site reflecting the recent changes. 
+						</P>
+            
+						<P><a name="database"></a></P>
+						<P class="segment_title">XML</p>
+						<P CLASS="bigbody"><span class="subHead">Implementation</span><br>
+						We knew we would have numerous and extensive character biographies and background essays. These pages are distinguished from the database-driven pages described above in that they are more free-form in their content and layout. There are headings, subheadings and images that vary in number and sequence from essay to essay. XML is well suited to handle this sort of document-oriented flexible structure. 
+						</P>
+						<P CLASS="bigbody">While it would be possible to write this kind of material directly into HTML we believe this to be unsustainable. The writer would be encumbered by the HTML tags and the designer would be encumbered by all of the text and the frequent versions as the text is rewritten and corrected, and each would be encumbered by the need to coordinate with the other. Overall changes in design, inevitable during development, would become extremely tedious. We wanted to follow the best practice of keeping content separate from display.
+						</P>
+						<P CLASS="bigbody">We felt it was well worth the extra overhead to store the content in XML. We created XML schemas for character narratives and background essays that defined sections, headings, subheadings, images, captions and page navigation such as links to glossary terms, maps and other essays. Following is a small excerpt from the beginning of the XML for a character narrative:
+						</P>
+			<code>
+            &lt;person&gt;<BR> &nbsp;&nbsp;&lt;name&gt;Atiwans&lt;/name&gt;<BR> 
+            &nbsp;&nbsp;&lt;group&gt;Sokoki - W&amp;ocirc;banaki&lt;/group&gt;<BR> 
+            &nbsp;&nbsp;&lt;yearBorn circa=&quot;true&quot;&gt;1661&lt;/yearBorn&gt;<BR> 
+            &nbsp;&nbsp;&lt;yearDied circa=&quot;true&quot;&gt;1748&lt;/yearDied&gt;<BR> 
+            &nbsp;&nbsp;&lt;segment shortTitle=&quot;Prologue&quot;&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;segTitle&gt;Prologue&lt;/segTitle&gt;<BR> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;segDates&gt;1661&lt;/segDates&gt;<BR> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;segBody&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;bottomCaptionPic&gt;<BR> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image fileName=&quot;atiwans.jpg&quot; 
+            width=&quot;200&quot; height=&quot;315&quot;/&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;Throughout 
+            his life, Atiwans remained deeply connected to the <BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Connecticut River valley.&lt;/caption&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;copyright&gt;Illustration 
+            copyright Francis Back.&lt;/copyright&gt;<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/bottomCaptionPic&gt;<BR> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;segPara&gt;When he was young, &lt;glossary 
+            invariant=&quot;Atiwans&quot;&gt;Atiwans&lt;/glossary&gt; <BR>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enjoyed swimming with the 
+            &lt;glossary invariant=&quot;namasak&quot;&gt;namasak&lt;/glossary&gt;,<BR> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the fish people, among 
+            the rocks and plants... 
+            </code> 
+            <P CLASS="bigbody"><span class="subHead">Data Entry</span><br>
+						Most writers are most comfortable writing in a regular word-processor such as Microsoft Word. We took that as a starting point. We had data entry person who could quickly copy and paste the document into XML. Several of our writers were comfortable making subsequent edits directly in the XML. 
+						</P>
+						<P CLASS="bigbody">To accomplish this we created templates in Altova's XMLSpy that worked with Altova's stand-alone editor called Authentic. With that editor and the appropriate template in place editing became as WYSIWYG as a word processor. Additionally there were boxes for entering the structured information required for each link that appeared within the text. 
+						</P>
+            <img src="howto_resources/images/Authentic.gif" alt="Artifact data entry form." width="606" height="298" border="1"><br>
+            <P CLASS="bigbody">The XML files were checked in and out of the server using Dreamweaver. That product has a check-in and out feature that prevents two people from changing the same file at the same time. Once a file was posted the changes were immediately reflected in the online preview accessed through the tracking lists, or within the site itself.
+						</P>
+						
+						<P CLASS="bigbody"><span class="subHead">Display</span><br>
+						The raw XML only becomes useful for display when it is transformed, usually to HTML, by XSL (XML Style Language). For instance, the following XML element
+						</P>
+            <blockquote>
+              <code>&lt;sectionHead&gt;Attack on Deerfield&lt;/sectionHead&gt;</code>  
+            </blockquote>
+            <P CLASS="bigbody">might be transformed to the following HTML:</P> 
+  					<blockquote>
+  					  <code>&lt;P class="heading"&gt;Attack on Deerfield&lt;/P&gt;</code>
+					  </blockquote>
+  					<P CLASS="bigbody">You'll notice that we're also using CSS. The syntax of XSL itself is a bit arcane and is beyond the scope of this document.
+						</P>
+						
+            <P CLASS="bigbody">We used Apache Xalan (<A href="http://xml.apache.org/xalan-j/" target="external">http://xml.apache.org/xalan-j/ 
+              </A>) behind the scenes to accomplish these transformations in real-time. 
+              Because this is fairly processor-intensive we implemented a caching 
+              schemethe transformation happens once, then on subsequent visits 
+              to the page the content is delivered from server memory. </P>
+
+						<P CLASS="bigbody"><span class="subHead">Flash</span><br>
+						Note: This flash discussion is no longer relevant. As of October 2020 we have updated interactive activities to HTML5.
+						A key goal of the project was to present the story from multiple perspectives. In our "shared scenes" we wanted the switch between perspectives to be as seamless as possible. We felt that reloading the HTML page for each switch would be too distracting. We chose Flash as a way to accomplish the switches while staying on the same page. Flash also offered advantages for rollovers and animation of the spotlight transitions. 
+						</P>
+						<P CLASS="bigbody">The shared scenes contain extensive text in addition to the images. In keeping with our policy of separating content from display, we stored text in XML files outside of Flash. This was doubly beneficial since we also wanted to present plain text versions of the shared scenesa single XML file could be transformed either for use in Flash or to plain HTML.
+						</P>
+						<P CLASS="bigbody">We channeled the content from XML to Flash using an approach that involved several steps. We wrote XSL that transformed the XML to a set of Action Script arrays that could be read by Flash:
+						</P>
+            <blockquote> <code> tabTexts["Intro"] = '&lt;p&gt;&lt;b&gt;Deerfield 
+              attacked:&lt;/b&gt; On February 29, 1704, the sun rose on a chaotic 
+              scene in the English settlement... in Native homelands?&lt;/p&gt;&lt;br&gt;'; 
+              <BR>
+              tabTexts["Wobanakiak"] = '&lt;p&gt;&lt;b&gt;In the battle: &lt;/b&gt; 
+              W\u00F4banaki fighters split into groups with other Natives and 
+              French... in an attack on New England.&lt;/p&gt;&lt;br&gt;'; </code> 
+            </blockquote>
+
+            <p class="bigbody">For each set of changes we would then need to re-compile the Flash. This was the one case where the editors did not see there changes in real-time. However, at the beginning of the authoring process we compiled the changes and additions often so that the authors could get acclimated to seeing their content in this interactive formata format very different from a Word document. </p>
+            <P><a name="webapp"></a></P>
+            <P class="segment_title">Web Application Framework</p>
+						<P CLASS="bigbody">A number of base technologies could be used to knit together the elements described above.  We wanted a cross-platform solution that would run on our existing Windows server, but one that could be moved, if necessary, to a commercial server that might be running UNIX or Linux. We therefore excluded Microsoft .Net solutions. We also thought that our scope, sophisticated needs and desire for long term maintenance would push the limits of PHP. We had experience with Java servlet technology from the American Centuries site and other projects, so this was a natural choice. Java servlets represent a mature, open-source, cross-platform, industrial-strength technology. It does present a fairly high threshold for entrya lengthy learning curve for the uninitiated. So an experienced Java programmer is required in the mix. For legacy and other reasons some institutions will make choices different from what we describe here. 
+						</P>
+						
+            <P CLASS="bigbody">On top of the Java servlet technology, and new 
+              to us for this project, we chose to use the Apache Struts web application 
+              framework ( <A href="http://struts.apache.org/" target="external">http://struts.apache.org/</A> 
+              ). A framework such as this takes care of a lot of groundwork allowing 
+              the developer to focus on the unique aspects of a given site. Many 
+              developers are using Struts so many discussion and a lot of help 
+              are available online. </P>
+						<P CLASS="bigbody">In the discussions of database and XML usage above we have mentioned the benefits of keeping content separate from display. The Struts framework helps additionally by keeping the flow of control separate from both the content and the display. This is known as the Model-View-Control approach. For controlling the flow (navigation) Struts provides a configuration file that associates URLs with content and with the pages that display that content. Because of this configuration file the site can be expanded by adding URLs and page names without touching the code. Of course the content has to be written and any new display has to be created, but it's a big plus not to have to go back into the programming cycle for every change.
+						</P>
+						<P CLASS="bigbody">The actual display is accomplished with tags inserted into the JSPJava Server Pages. There is no programming contained in the pagesa designer is able make changes to these tags as well as to the surrounding plain HTML.
+            <P class="small_menu"><a href="#top">top of page</a></P>
+          </TD>
+        </TR>
+      </TABLE>
+      <P><IMG SRC="../images/golden_rule.gif" ALT="rule" WIDTH="740" HEIGHT="1"></p>
+      <!-- begin include "btmnav.html" -->
 <p CLASS="pgMenu">
         <A HREF="index.jsp.html" class="topnav1">About This Site</A> &nbsp; 
-        <A HREF="../list/biblio/all.do.html" class="topnav1">Resources</A> &nbsp; 
-        <A HREF="../list/glossary/all.do.html" class="topnav1">Glossary</A> &nbsp; 
+        <A HREF="../list/biblio/all.html" class="topnav1">Resources</A> &nbsp; 
+        <A HREF="../list/glossary/all.html" class="topnav1">Glossary</A> &nbsp; 
         <A HREF="../teachers/index.jsp.html" class="topnav1">Teachers' Guide</A> &nbsp; 
         <A HREF="../sitemap.html" class="topnav1">Site Map</A> &nbsp; 
 		<!-- feedback removed -->
@@ -40,4 +216,9 @@
         <br>
 </p>
 <!-- end include "btmnav.html" -->
-    </TD>  </TR></TABLE></body></html>
+
+    </TD>
+  </TR>
+</TABLE>
+</body>
+</html>
