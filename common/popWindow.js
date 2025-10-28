@@ -24,6 +24,7 @@ function openLink(linkType, shortName, anchorName) {
     // xsl has to have same name as linkType
     var width = 600;
     var height = 500;
+    var path = "/popups/";
     if (linkType == "glossary") {
         width = 350; height = 300;
     } else if (linkType == "footnotes") {
@@ -31,11 +32,15 @@ function openLink(linkType, shortName, anchorName) {
     } else if (linkType == "scene_preview") {
         width = 800; height = 600;
     } else if (linkType == "maps") {
+        path = "/";
         width = 600; height = 440;
+    } else if (linkType == "about") {
+        path = "/";
+        width = 800; height = 440;
     } else if (linkType == "artifacts") {
         width = 800; height = 600;
     }
-    var linkUrl = "/popups/" + linkType + "/" + shortName + ".html";
+    var linkUrl = path + linkType + "/" + shortName + ".html";
     // TEMPORARILY DISABLED FOR SCRAPING - re-enable after capture
     if (anchorName && anchorName.length > 0) {
         linkUrl += "#" + anchorName;
