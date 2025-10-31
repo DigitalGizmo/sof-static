@@ -50,6 +50,17 @@
 	line-height: 24px;
 	color : #330000;
 }
+/* Don adding for 404 page */
+.not_found {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: bold;
+	line-height: 24px;
+	color : #330000;
+  background-color: #CC9933;
+  text-align: center;
+  padding: .5em;
+}
 /*Don adding for new index intro text*/
 .intro_text {
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
