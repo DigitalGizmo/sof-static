@@ -2,7 +2,7 @@
 *.jpg
 *.log
 *.mp3
-
+*.m4a
 # files
 .DS_Store
 
