@@ -38,7 +38,10 @@ function openLink(linkType, shortName, anchorName) {
         path = "/";
         width = 800; height = 440;
     } else if (linkType == "artifacts") {
-        width = 800; height = 600;
+      width = 800; height = 600;
+    } else if (linkType == "transcripts") {
+      path = "/voices/";
+      width = 800; height = 600;
     }
     var linkUrl = path + linkType + "/" + shortName + ".html";
     // TEMPORARILY DISABLED FOR SCRAPING - re-enable after capture
